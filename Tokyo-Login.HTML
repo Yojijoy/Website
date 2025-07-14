@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tokyo Tourism - Login</title>
+    <link rel="stylesheet" href="Tokyo.css">
+     <body onload="startClock()">
+
+  <div id="topBar">
+    <div id="clock">Loading time...</div>
+    <button onclick="toggleDarkMode()">
+      <span class="icon" id="modeIcon">🌞</span>
+      Toggle Dark Mode
+    </button>
+  </div>
+  <br>
+</head>
+<body>
+    <header>
+        <h1>Tokyo Tourism Login</h1>
+    </header><br>
+
+    
+
+
+        <ul>
+            <li><a href="Tokyo-home.html">Home</a></li>
+            <li><a href="file:///C:/Users/user/Documents/Tokyo-Gallery.HTML">Gallery</a></li>
+            <li><a href="Visit Tokyo.html">Visit Tokyo</a></li>
+            <li><a href="Tokyo-contact.html">Contact Us</a></li>
+            <li><a href="Tokyo-Meet.html">Meet Our Team</a></li>
+            
+        </ul>
+    
+
+ <h2>Member Login</h2>
+  <form id="visitForm" onsubmit="return validateForm()">
+ <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+ <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+ <div class="form-group">
+            <label for="password">Create Account Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span class="error" id="passwordError"></span>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <span class="error" id="confirmError"></span>
+        </div>
+
+
+    
+    <button type="submit"class="login-button" onclick="alert('You have succesfully logged in')">Login</button>
+    
+    <script src = "Tokyo.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
