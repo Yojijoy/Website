@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Tokyo Gallery</title>
+    <link rel="stylesheet" href="Tokyo.css">
+    <style>
+        
+        .pg1:first-letter {
+            font-size: 3em;
+            float: left;
+            line-height: 0.8;
+            margin-right: 8px;
+            color: #d23669;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .gallery-item:hover .caption {
+            transform: translateY(0);
+        }
+    </style>
+     <body onload="startClock()">
+
+  <div id="topBar">
+    <div id="clock">Loading time...</div>
+    <button onclick="toggleDarkMode()">
+      <span class="icon" id="modeIcon">🌞</span>
+      Toggle Dark Mode
+    </button>
+  </div>
+  <br>s
+</head>
+<body>
+     <body style="background-color:Pink;">
+
+   
+
+        <h1>Tokyo Gallery</h1>
+
+    
+        <h2>The Beauty of Tokyo</h2>
+            
+            <p class="pg1">As dawn breaks over the Sumida River, Tokyo awakens in a symphony of contrasts. The city that gave us both the serenity of Zen gardens and the frenzy of Shibuya Crossing continues to captivate visitors with its endless layers of discovery. Our photographers have captured these moments that define the soul of this metropolis.</p><br>
+            
+            
+            
+            <p>The images in this gallery represent more than just landmarks; they are windows into the daily rhythms of a city that somehow manages to be both hyper-modern and deeply traditional. From the quiet contemplation of Meiji Shrine to the digital billboards of Shinjuku, Tokyo offers visual poetry at every turn.</p><br>
+            
+            <p>What emerges from these photographs is not just the physical beauty of the city, but its emotional resonance. The salaryman enjoying a quick nap in Hibiya Park, the meticulous preparation of sushi in Tsukiji, the neon glow reflecting off rain-slicked streets in Akihabara - each tells a story of Tokyo's unique character.</p>
+        </article>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989" alt="Shibuya Crossing">
+                
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1492571350019-22de08371fd3" alt="Tokyo Tower at night">
+      
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26" alt="Senso-ji Temple">
+               
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1491884662610-dfcd28f30cfb" alt="Shinjuku streets">
+                
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1551641506-ee5bf4cb45f1" alt="Cherry blossoms">
+                
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://strapi.stippl.io/strapi/large_Kyoto_Most_Beautiful_Traditional_Cities_in_Japan_6f33d011c8.jpg" alt="Kyoto">
+     
+            </div>
+        </div>
+        
+        
+            <h3>A City of Neighborhoods</h3>
+            
+            <p>What makes Tokyo truly special is its collection of distinct neighborhoods, each with its own personality. The gallery showcases this diversity - from the electronic wonderland of Akihabara to the chic boutiques of Omotesando, from the historic charm of Yanaka to the space-age architecture of Odaiba.</p><br>
+            
+            <p>As our photographs reveal, Tokyo is a city that rewards both the planner and the wanderer. You can meticulously plot your course to famous sites, or simply lose yourself in its labyrinthine streets - either way, you'll find moments of unexpected beauty.</p><br>
+            
+            <p>This collection represents just a glimpse of Tokyo's visual splendor. We invite you to explore these images, then come see for yourself why this city continues to enchant visitors from around the world.</p><br>
+
+   <li><a href = "Index.HTML">Home</a></li>
+
+    <li><a href="Visit Tokyo.html">Visit Tokyo</a></li>
+
+   <li><a href = "Tokyo-Contact.HTML">Contact Us</a></li>
+        
+   <li><a href = "Tokyo-Meet.HTML">Meet the Team</a></li>
+
+   <li><a href = "Tokyo-Login.HTML">Login</a></li><br>
+    </main>
+
+     <script src = "Tokyo.js"></script>
+    
+</body>
+</html>

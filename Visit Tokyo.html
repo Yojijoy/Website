@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+    	<link rel="stylesheet" href="Tokyo.css">
+      <title>Tokyo Tourism - Visit</title>
+       <body onload="startClock()">
+
+  <div id="topBar">
+    <div id="clock">Loading time...</div>
+    <button onclick="toggleDarkMode()">
+      <span class="icon" id="modeIcon">🌞</span>
+      Toggle Dark Mode
+    </button>
+  </div>
+  <br>
+    </head>
+    <body>
+      <body style="background-color:pink;">
+
+    	<h1>Plan Your Tokyo Visit</h1>
+     
+     <li><a href = "Index.HTML">Home</a></li>
+
+     <li><a href = "Tokyo-Gallery.HTML">Gallery</a></li>
+
+     <li><a href = "Tokyo-Contact.HTML">Contact Us</a></li>
+
+     <li><a href = "Tokyo-Meet.HTML">Meet our Team</a></li>
+
+     <li><a href = "Tokyo-Login.HTML">Login</a></li>
+
+     <img src="https://i0.wp.com/tokyotreatblog.wpcomstaging.com/wp-content/uploads/2024/02/mt-fuji-japan-thumbnail.webp?fit=1024%2C683&ssl=1" alt="Mt Fuji" width="700" height="50">
+
+<h2><u>Travel Inquiry Form</u></h2>
+<form>
+    
+
+     <form id="visitForm" onsubmit="return validateForm()">
+        <div class="form-group">
+	 <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br>
+     <span class="error" id="nameError"></span>
+        </div>
+
+
+    <div class="form-group">
+     <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+     <span class="error" id="emailError"></span>
+        </div>
+
+
+      <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        <span class="error" id="phoneError"></span>
+        </div>
+
+     <div class="form-group">
+     <label for="visit-date">Preferred Visit Date:</label>
+        <input type="date" id="visit-date" name="visit-date"><br>
+     <span class="error" id="dateError"></span>
+        </div>
+
+     <div class="form-group">
+     <label for="duration">Duration of Stay:</label>
+        <select id="duration" name="duration"><br>
+            <option value="1-3">1-3 days</option>
+            <option value="4-7">4-7 days</option>
+            <option value="8-14">8-14 days</option>
+            <option value="15+">15+ days</option>
+        </select>
+    </div>
+    
+
+
+<div class="form-group">
+  <label>Choose the season you want to visit;</label>
+     <div class="radio-group">
+	<input type="radio" id="Summer" name="fav_language" value="Summer"
+	<label for="Summer">Summer</label><br>
+
+	<input type="radio" id="Winter" name="fav_language" value="Winter"
+	<label for="Winter">Winter</label><br>
+
+	<input type="radio" id="Autumn" name="fav_language" value="Autumn"
+	<label for="Autumn">Autumn</label><br>
+
+	<input type="radio" id="Spring" name="fav_language" value="Spring"
+	<label for="Spring">Spring</label><br>
+
+<br>
+
+<button type="submit"class="button" onclick="alert('You have succesfully submitted the form')">Submit Inquiry</button></form>
+
+ <script src = "Tokyo.js"></script>
+
+  </body>
+</html>
